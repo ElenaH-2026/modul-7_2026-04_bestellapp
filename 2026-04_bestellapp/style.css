@@ -25,6 +25,10 @@ h1 > span {
   color: var(--color-dark);
 }
 
+h2 > span {
+  font-weight: 400;
+}
+
 .h1-slogan {
   font-size: 24px;
   font-weight: 600;
@@ -90,18 +94,6 @@ main {
 header, footer {
   color: var(--color-white);
   background-color: var(--color-dark);
-  height: 120px;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-container {
-  display: flex;
-  justify-self: center;
-  gap: 72px;
 }
 
 header {
@@ -110,6 +102,35 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 120px;
+  margin-right: 40px;
+  height: 120px;
+}
+
+.header-logo {
+  height: 40px;
+}
+
+.nav-icon {
+  height: 35px;
+}
+
+.footer-container {
+  display: flex;
+  justify-self: center;
+  padding-top: 60px;
+  gap: 72px;
+  height: 120px;
+}
+
+.copyright-symbol {
+  vertical-align: sub;
 }
 
 /* hero-section */
@@ -168,19 +189,27 @@ header {
 
 .category-seperator {
   background-color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  gap: 40px;
   height: 60px;
 }
 
-.h2-container {
-  display: flex;
-  gap: 40px;
+.category-icon {
+  margin-left: 160px;
+  height: 90px;
+}
+
+.burger-icon {
+  margin-bottom: 24px;
 }
 
 .category-container {
   display: flex;
   flex-direction: column;
-  
-  
+  padding-top: 32px;
+  padding-bottom: 120px;
+  gap: 16px;  
 }
 
 .dish-container {
@@ -191,13 +220,25 @@ header {
   padding: 12px;
   gap: 16px;
   width: 50%;
-  
 }
 
 .dish-img {
   border-radius: 12px;
   height: 120px;
-  aspect-ratio: 4/3;
+  aspect-ratio: 5/3;
   object-fit: cover;
-  
+}
+
+.name-and-description-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-and-add-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }

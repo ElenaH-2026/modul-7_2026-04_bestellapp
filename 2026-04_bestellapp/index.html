@@ -19,14 +19,12 @@
 <body>
     <header class="wrapper">
         <div class="header-container">
-            <img 
+            <img class="header-logo"
                 src="./assets/icons/logo-symbol-und-text.svg" 
                 alt="Bestell App">
-            <a href="#">
-                <img 
-                    src="./assets/icons/menu.svg" 
-                    alt="Navigationsmenü">
-            </a>
+            <img class="nav-icon"
+                src="./assets/icons/menu.svg" 
+                alt="Navigationsmenü">
         </div>
     </header>
     <main>
@@ -49,47 +47,71 @@
                 <p class="h1-slogan">The best of Burgers, Pizza, and Greens, all in one great place.</p>
             </div>
         </section>
-        <section>
-            <div class="category-seperator">
-                <div class="h2-container wrapper">
-                    <img 
+
+        <section id="#BurgerSection">
+            <div class="category-seperator wrapper">
+                    <img class="category-icon burger-icon"
                         src="./assets/icons/burger.png" 
                         alt="Burger">
-                    <h2>Burger & Sandwiches</h2>
-                </div>
+                    <h2>Burger</h2>
             </div>
-            <div id="#Burger"
+            <div id="#BurgerContainer"
                 class="category-container wrapper">
                 <div class="dish-container">
                     <img class="dish-img"
                         src="./assets/img/b-veggie-mushroom-black-burger.jpg" 
                         alt="">
-                    <div>
+                    <div class="name-and-description-container">
                         <p class="dish-name-and-price">Name</p>
                         <p class="dish-description">Beschreibung</p>
                     </div>
-                    <div>
+                    <div class="price-and-add-container">
                         <p class="dish-name-and-price">x,xx €</p>
                         <button class="btn-add-to-basket">Add to basket</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
 
+        <section id="#PizzaSection">
+            <div class="category-seperator wrapper">
+                    <img class="category-icon"
+                        src="./assets/icons/pizza.png" 
+                        alt="Pizza">
+                    <h2>Pizza <span>(30 cm)</span></h2>
+            </div>
+            <div id="#PizzaContainer"
+                class="category-container wrapper">
+            </div>
         </section>
-        <section>
 
+        <section id="#SaladSection">
+            <div class="category-seperator wrapper">
+                    <img class="category-icon"
+                        src="./assets/icons/salad.png" 
+                        alt="Salat">
+                    <h2>Salat</h2>
+            </div>
+            <div id="#SaladContainer"
+                class="category-container wrapper">
+            </div>
         </section>
+
+        <aside id="#Basket">
+            <div class="basket">
+
+            </div>
+
+        </aside>
     </main>
     <footer class="wrapper">
         <div class="footer-container">
-            <div>
-                <img 
+            <a href="#">
+                <img class="copyright-symbol"
                     src="./assets/icons/copyright.svg" 
                     alt="Copyright">
                 2025 BurgerHouse
-            </div>
+            </a>
             <a href="#">Imprint</a>
             <a href="#">Cookie Preferences</a>
         </div>
