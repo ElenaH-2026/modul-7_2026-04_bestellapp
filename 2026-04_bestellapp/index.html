@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestellAPP</title>
+    <link rel="shortcut icon" href="./assets/icons/logo-symbol.svg" type="image/x-icon">
+
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./script.js"></script>
+
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+</head>
+<body>
+    <header class="wrapper">
+        <div class="header-container">
+            <img 
+                src="./assets/icons/logo-symbol-und-text.svg" 
+                alt="Bestell App">
+            <a href="#">
+                <img 
+                    src="./assets/icons/menu.svg" 
+                    alt="Navigationsmenü">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section wrapper">
+            <div class="hero-image"></div>
+            <img class="hero-logo"
+                src="./assets/icons/logo-BurgerHouse.png" 
+                alt="BurgerHouse">
+            <div class="hero-text">
+                <div class="h1-container">
+                    <h1><span>Burger</span>House</h1>
+                    <div class="star-container">
+                        <img class="rating-star"
+                        src="./assets/icons/star.svg" 
+                        alt="Stern">
+                        <p class="rating">4,1</p>
+                        <p class="number-of-ratings">(317)</p>
+                    </div>
+                </div>
+                <p class="h1-slogan">The best of Burgers, Pizza, and Greens, all in one great place.</p>
+            </div>
+        </section>
+        <section>
+            <div class="category-seperator">
+                <div class="h2-container wrapper">
+                    <img 
+                        src="./assets/icons/burger.png" 
+                        alt="Burger">
+                    <h2>Burger & Sandwiches</h2>
+                </div>
+            </div>
+            <div id="#Burger"
+                class="category-container wrapper">
+                <div class="dish-container">
+                    <img class="dish-img"
+                        src="./assets/img/b-veggie-mushroom-black-burger.jpg" 
+                        alt="">
+                    <div>
+                        <p class="dish-name-and-price">Name</p>
+                        <p class="dish-description">Beschreibung</p>
+                    </div>
+                    <div>
+                        <p class="dish-name-and-price">x,xx €</p>
+                        <button class="btn-add-to-basket">Add to basket</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer class="wrapper">
+        <div class="footer-container">
+            <div>
+                <img 
+                    src="./assets/icons/copyright.svg" 
+                    alt="Copyright">
+                2025 BurgerHouse
+            </div>
+            <a href="#">Imprint</a>
+            <a href="#">Cookie Preferences</a>
+        </div>
+    </footer>
+</body>
+
+</html>
